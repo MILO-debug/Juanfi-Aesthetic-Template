@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hotspot Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="slideshow">
+            <img id="slide" src="logo1.png" alt="Logo">
+        </div>
+        <h2>WiFi Connect</h2>
+        <button id="insert-coin-btn" class="insert-coin">
+            <img src="insert-coin.png" alt="Insert Coin" class="button-icon"> Insert Coin
+        </button>
+        <button class="my-points">
+            <img src="my-points.png" alt="My Points" class="button-icon"> My Points
+        </button>
+        <button class="promo-rates">
+            <img src="promo-rates.png" alt="Promo Rates" class="button-icon"> Promo Rates
+        </button>
+        <input type="text" placeholder="Enter voucher code">
+        <div class="connect">
+            <button>Connect</button>
+        </div>
+        <p>Powered by KULOT PISOWIFI | Press 'Insert Coin' to connect to the internet.</p>
+    </div>
+
+    <div id="popup-banner" class="popup-banner hide">
+        <h3 id="popup-title"></h3>
+        <div id="insert-coin-content" class="insert-coin-content" style="display: none;">
+            <p>Please insert the coin.</p>
+            <div class="progress-bar">
+                <div id="progress" class="progress" style="width: 100%;"></div>
+            </div>
+            <div class="code-container">
+                <span>Your Code is: </span><span id="code-display">______</span>
+            </div>
+            <div class="coin-time-container">
+                <div class="coin-container">
+                    <span>Coin: </span><span id="coin-value">0.00 PHP</span>
+                </div>
+                <div class="time-container">
+                    <span>Time: </span><span id="time-value">00:00:00</span>
+                </div>
+            </div>
+        </div>
+        <button id="close-popup" class="close-button">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
